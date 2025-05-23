@@ -48,44 +48,55 @@ class _HomescreenState extends State<Homescreen> {
           "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      "username": "@john_doe",
-      "image": "https://via.placeholder.com/400x201",
-      "time": "1 hr ago",
-      "song": "Lost Cause",
-      "artist": "Billie Eilish",
-      "albumArt": "https://via.placeholder.com/51",
+      "username": "@harry_lee",
+      "image":
+          "https://images.unsplash.com/photo-1642802767829-bea7b5a6c15f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time": "25 min ago",
+      "song": "Black Eyes Blue",
+      "artist": "Corey Taylor",
+      "albumArt":
+          "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      "username": "@john_doe",
-      "image": "https://via.placeholder.com/400x201",
-      "time": "1 hr ago",
-      "song": "Lost Cause",
-      "artist": "Billie Eilish",
-      "albumArt": "https://via.placeholder.com/51",
+      "username": "@harry_lee",
+      "image":
+          "https://images.unsplash.com/photo-1642802767829-bea7b5a6c15f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time": "25 min ago",
+      "song": "Black Eyes Blue",
+      "artist": "Corey Taylor",
+      "albumArt":
+          "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      "username": "@john_doe",
-      "image": "https://via.placeholder.com/400x201",
-      "time": "1 hr ago",
-      "song": "Lost Cause",
-      "artist": "Billie Eilish",
-      "albumArt": "https://via.placeholder.com/51",
+      "username": "@harry_lee",
+      "image":
+          "https://images.unsplash.com/photo-1642802767829-bea7b5a6c15f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time": "25 min ago",
+      "song": "Black Eyes Blue",
+      "artist": "Corey Taylor",
+      "albumArt":
+          "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      "username": "@john_doe",
-      "image": "https://via.placeholder.com/400x201",
-      "time": "1 hr ago",
-      "song": "Lost Cause",
-      "artist": "Billie Eilish",
-      "albumArt": "https://via.placeholder.com/51",
+      "username": "@harry_lee",
+      "image":
+          "https://images.unsplash.com/photo-1642802767829-bea7b5a6c15f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time": "25 min ago",
+      "song": "Black Eyes Blue",
+      "artist": "Corey Taylor",
+      "albumArt":
+          "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+
     {
-      "username": "@john_doe",
-      "image": "https://via.placeholder.com/400x201",
-      "time": "1 hr ago",
-      "song": "Lost Cause",
-      "artist": "Billie Eilish",
-      "albumArt": "https://via.placeholder.com/51",
+      "username": "@harry_lee",
+      "image":
+          "https://images.unsplash.com/photo-1642802767829-bea7b5a6c15f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time": "25 min ago",
+      "song": "Black Eyes Blue",
+      "artist": "Corey Taylor",
+      "albumArt":
+          "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     // Ajoute plus de cartes ici...
   ];

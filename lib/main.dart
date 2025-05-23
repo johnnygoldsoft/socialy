@@ -5,14 +5,15 @@ import 'package:socialy/screens/homeScreen.dart';
 import 'package:socialy/screens/mainScreen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
-    DevicePreview(
-      isToolbarVisible: true,
-      builder: (context) => const MyApp(),
-    ),
 
-    // const MyApp()
-  );
+      // DevicePreview(
+      //   isToolbarVisible: true,
+      //   builder: (context) => const MyApp(),
+      // ),
+
+      const MyApp());
 }
 
 class MyApp extends StatelessWidget {

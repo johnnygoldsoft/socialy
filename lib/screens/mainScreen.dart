@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:socialy/screens/homeScreen.dart';
 import 'package:socialy/screens/onbordingScreen.dart';
+import 'package:socialy/screens/profileScreen.dart';
+import 'package:socialy/screens/profileScreen2.dart';
+import 'package:socialy/screens/reelScreen.dart';
 
 class Mainscreen extends StatefulWidget {
   const Mainscreen({super.key});
@@ -15,10 +18,10 @@ class _MainscreenState extends State<Mainscreen> {
 
   final List<Widget> _pages = [
     Homescreen(),
-    Center(child: Text("Videos Page")),
+    Reelscreen(),
     Center(child: Text("Add Page")),
-    Center(child: Text("Search Page")),
-    Center(child: Text("Account Page")),
+    ProfileScreen(),
+    Profilescreen2(),
   ];
 
   void _onItemTapped(int index) {
