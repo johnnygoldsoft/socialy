@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:socialy/screens/widgets/customCard.dart';
+import 'package:socialy/screens/widgets/emojiCounter.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
@@ -31,8 +32,16 @@ class _HomescreenState extends State<Homescreen> {
       "image":
           "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
-    {"name": "santiago18", "image": "https://via.placeholder.com/150/00FF00"},
-    {"name": "elxGray", "image": "https://via.placeholder.com/150/0000FF"},
+    {
+      "name": "santiago18",
+      "image":
+          "https://images.unsplash.com/photo-1662139578574-36c9c0f724ec?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "name": "elxGray",
+      "image":
+          "https://images.unsplash.com/photo-1657140610896-9736a42f4ea9?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
   ];
 
   // Liste fictive de données pour les cartes.
@@ -50,27 +59,27 @@ class _HomescreenState extends State<Homescreen> {
     {
       "username": "@harry_lee",
       "image":
-          "https://images.unsplash.com/photo-1642802767829-bea7b5a6c15f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1662139578574-36c9c0f724ec?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "25 min ago",
       "song": "Black Eyes Blue",
       "artist": "Corey Taylor",
       "albumArt":
-          "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1657140610896-9736a42f4ea9?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       "username": "@harry_lee",
       "image":
-          "https://images.unsplash.com/photo-1642802767829-bea7b5a6c15f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1657140610896-9736a42f4ea9?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "25 min ago",
       "song": "Black Eyes Blue",
       "artist": "Corey Taylor",
       "albumArt":
-          "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1662139578574-36c9c0f724ec?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       "username": "@harry_lee",
       "image":
-          "https://images.unsplash.com/photo-1642802767829-bea7b5a6c15f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://plus.unsplash.com/premium_photo-1694425773163-d8d730608767?q=80&w=404&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "25 min ago",
       "song": "Black Eyes Blue",
       "artist": "Corey Taylor",
@@ -100,6 +109,26 @@ class _HomescreenState extends State<Homescreen> {
     },
     // Ajoute plus de cartes ici...
   ];
+
+  Set<int> selectedIndices = {};
+
+  final List<Map<String, dynamic>> reactions = [
+    {'emoji': '❤️', 'count': 98},
+    {'emoji': '👍', 'count': 88},
+    {'emoji': '🚴', 'count': 84},
+    {'emoji': '😡', 'count': 72},
+    {'emoji': '⚡', 'count': 14},
+  ];
+
+  void onReactionTap(int index) {
+    setState(() {
+      if (selectedIndices.contains(index)) {
+        selectedIndices.remove(index); // Désélectionner
+      } else {
+        selectedIndices.add(index); // Sélectionner
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -198,17 +227,26 @@ class _HomescreenState extends State<Homescreen> {
                 itemCount: cardData.length,
                 itemBuilder: (context, index) {
                   final data = cardData[index];
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 5),
-                    child: CustomCard(
-                      key: ValueKey(data["username"]),
-                      username: data["username"]!,
-                      image: data["image"]!,
-                      time: data["time"]!,
-                      song: data["song"]!,
-                      artist: data["artist"]!,
-                      albumArt: data["albumArt"]!,
-                    ),
+                  return Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 5),
+                        child: CustomCard(
+                          key: ValueKey(data["username"]),
+                          username: data["username"]!,
+                          image: data["image"]!,
+                          time: data["time"]!,
+                          song: data["song"]!,
+                          artist: data["artist"]!,
+                          albumArt: data["albumArt"]!,
+                        ),
+                      ),
+                      Emojicounter(
+                        reactions: reactions,
+                        selectedIndices: selectedIndices,
+                        onTap: onReactionTap,
+                      )
+                    ],
                   );
                 },
               ),

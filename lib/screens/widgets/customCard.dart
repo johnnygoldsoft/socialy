@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:socialy/screens/widgets/emojiCounter.dart';
 
 class CustomCard extends StatelessWidget {
   final String username;
@@ -72,7 +73,7 @@ class CustomCard extends StatelessWidget {
           ClipRRect(
             child: Image.network(
               image,
-              height: MediaQuery.of(context).size.height * 0.6,
+              height: MediaQuery.of(context).size.height * 0.5,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
@@ -116,17 +117,31 @@ class CustomCard extends StatelessWidget {
                 ),
                 const Spacer(),
                 // Bouton de lecture
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[300],
-                    shape: BoxShape.circle,
-                  ),
-                  child: IconButton(
-                    onPressed: () {
-                      debugPrint("Play tapped");
-                    },
-                    icon: const Icon(Icons.play_arrow_outlined),
-                  ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.add,
+                      weight: 1,
+                    ),
+                    SizedBox(
+                      width: 15.w,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          shape: BoxShape.rectangle,
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      child: IconButton(
+                        onPressed: () {
+                          debugPrint("Play tapped");
+                        },
+                        icon: const Icon(
+                          Icons.play_arrow_outlined,
+                          size: 30,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

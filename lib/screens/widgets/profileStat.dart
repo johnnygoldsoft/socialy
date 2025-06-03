@@ -45,13 +45,14 @@ class ProfileStatsWidget extends StatelessWidget {
   Widget _buildStatCard(Map<String, dynamic> stat) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 2.w),
-      padding: EdgeInsets.all(12.w),
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 7.w),
       decoration: BoxDecoration(
         color: Colors.grey.withOpacity(0.2),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           // Superposition des avatars
           SizedBox(
@@ -61,7 +62,7 @@ class ProfileStatsWidget extends StatelessWidget {
               alignment: Alignment.center,
               children: List.generate(stat['images'].length, (index) {
                 return Positioned(
-                  left: index * 30.0, // Décalage horizontal entre les avatars
+                  left: index * 26.0, // Décalage horizontal entre les avatars
                   child: CircleAvatar(
                     radius: 16,
                     backgroundImage: NetworkImage(stat['images'][index]),
@@ -84,13 +85,14 @@ class ProfileStatsWidget extends StatelessWidget {
               ),
 
               SizedBox(
-                width: 5.w,
+                width: 4.w,
               ),
               // Label
               Text(
                 stat['label'],
                 style: TextStyle(
-                  color: Colors.grey[600],
+                  color: Colors.grey[900],
+                  fontWeight: FontWeight.bold,
                   fontSize: 12,
                 ),
               ),

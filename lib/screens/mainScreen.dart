@@ -25,9 +25,17 @@ class _MainscreenState extends State<Mainscreen> {
   ];
 
   void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
+    if (index == 1) {
+      // L'onglet "Videos" ouvre une page plein écran
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Reelscreen()),
+      );
+    } else if (index != 2) {
+      setState(() {
+        _selectedIndex = index;
+      });
+    }
   }
 
   @override
